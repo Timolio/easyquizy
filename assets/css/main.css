@@ -1,0 +1,421 @@
+.checkbox-wrapper input[type='checkbox'] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-wrapper label {
+    position: relative;
+    padding-left: 2em;
+    padding-right: 0em;
+    /* line-height: 2; */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.checkbox-wrapper {
+    z-index: 1;
+}
+
+.checkbox-wrapper label:before {
+    box-sizing: border-box;
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid var(--tg-theme-hint-color);
+    border-radius: 6px;
+}
+
+.checkbox-wrapper input[type='checkbox']:checked + label {
+    padding-left: 1em;
+    padding-right: 1em;
+    color: var(--tg-theme-button-very-light-color);
+}
+.checkbox-wrapper input[type='checkbox']:checked + label:before {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 10px 15px -3px var(--tg-theme-button-shadow-color),
+        0 4px 6px -4px var(--tg-theme-button-shadow-color);
+    background: var(--tg-theme-button-color);
+    border-color: var(--tg-theme-button-color);
+    z-index: -1;
+    border-radius: 0.5rem;
+}
+
+/* .checkbox-wrapper label,
+.checkbox-wrapper label::before {
+    transition: 0.25s all ease;
+} */
+.radio-wrapper input[type='radio'] {
+    display: none;
+    visibility: hidden;
+}
+
+.radio-wrapper label {
+    position: relative;
+    padding-left: 2em;
+    padding-right: 0em;
+    line-height: 1.4em;
+    cursor: pointer;
+    display: inline-flex;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.radio-wrapper label:before {
+    box-sizing: border-box;
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid var(--tg-theme-hint-color);
+    border-radius: 2em;
+}
+
+.radio-wrapper {
+    z-index: 1;
+}
+
+.radio-wrapper input[type='radio']:checked + label {
+    padding-left: 1em;
+    padding-right: 1em;
+    color: var(--tg-theme-button-very-light-color);
+}
+
+.radio-wrapper input[type='radio']:checked + label:before {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background: var(--tg-theme-button-color);
+    border-color: var(--tg-theme-button-color);
+    box-shadow: 0 10px 15px -3px var(--tg-theme-button-shadow-color),
+        0 4px 6px -4px var(--tg-theme-button-shadow-color);
+    z-index: -1;
+    border-radius: 50em;
+}
+
+/* .radio-wrapper label,
+.radio-wrapper label::before {
+    transition: all 0.25s ease;
+} */
+.ghost {
+    opacity: 0.5;
+}
+.chosen {
+    transform: scale(1.05);
+}
+
+.tg-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--tg-theme-hint-color);
+    border-radius: 0;
+    color: var(--tg-theme-text-color);
+    transition: all 0.1s;
+}
+
+.tg-input:focus {
+    border-bottom-color: var(--tg-theme-button-color);
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.tg-element {
+    width: 100%;
+    position: relative;
+    background-color: var(--tg-theme-section-light-bg-color);
+    color: var(--tg-theme-text-color);
+    /* padding: 1.3rem 1.6rem; */
+    overflow: hidden;
+}
+
+.tg-dark-element {
+    width: 100%;
+    position: relative;
+    background-color: var(--tg-theme-section-dark-bg-color);
+    color: var(--tg-theme-text-color);
+    /* padding: 1.3rem 1.6rem; */
+    overflow: hidden;
+}
+
+.form-header {
+    background-color: var(--tg-theme-section-dark-bg-color);
+}
+
+.h-po:hover {
+    box-shadow: none;
+}
+
+.tg-element .main,
+.tg-element.main {
+    /* background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-section-bg-color) 65%,
+        var(--tg-theme-section-dark-bg-color) 100%
+    ); */
+    background-color: var(--tg-theme-section-bg-color) !important;
+}
+.tg-element .header {
+    background-color: var(--tg-theme-section-dark-bg-color);
+    border-radius: 0.75rem;
+}
+
+.tg-hint {
+    color: var(--tg-theme-hint-color);
+}
+
+.tg-section {
+    background-color: var(--tg-theme-section-bg-color);
+    color: var(--tg-theme-text-color);
+}
+
+.tg-button {
+    box-shadow: 0 10px 15px -3px var(--tg-theme-button-shadow-color),
+        0 4px 6px -4px var(--tg-theme-button-shadow-color);
+    background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-button-color) 0%,
+        var(--tg-theme-button-light-color) 100%
+    );
+    color: var(--tg-theme-button-very-light-color);
+}
+
+.tg-button-home {
+    background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-button-color) 0%,
+        var(--tg-theme-button-light-color) 100%
+    );
+    color: var(--tg-theme-button-light-color);
+}
+
+.hotbar {
+    background-color: transparent;
+}
+
+.buttons-wrapper {
+    box-shadow: 0 10px 15px -3px var(--tg-theme-text-shadow-color),
+        0 4px 6px -4px var(--tg-theme-text-shadow-color);
+    background-color: var(--tg-theme-text-color);
+}
+
+.addbutton {
+    background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-text-color) 0%,
+        var(--tg-theme-button-very-light-color) 60%
+    );
+    border: 2px solid var(--tg-theme-button-color);
+}
+
+.addbutton:hover {
+    background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-button-very-light-color) 0%,
+        var(--tg-theme-text-color) 60%
+    );
+}
+
+.hotbarbutton {
+    /* box-shadow: 0 10px 15px -3px var(--tg-theme-button-shadow-color),
+        0 4px 6px -4px var(--tg-theme-button-shadow-color); */
+    background-color: var(--tg-theme-text-color);
+    color: var(--tg-theme-button-color);
+    /* border: 3px solid var(--tg-theme-button-color); */
+}
+
+.tg-faint-button {
+    /* background-color: var(--tg-theme-section-dark-bg-color); */
+    border: 2px dashed var(--tg-theme-text-color);
+    color: var(--tg-theme-text-color);
+}
+
+.destructive {
+    color: var(--tg-theme-dark-destructive-text-color);
+}
+
+.tg-destructive-button {
+    box-shadow: 0 10px 15px -3px var(--tg-theme-shadow-destructive-text-color),
+        0 4px 6px -4px var(--tg-theme-shadow-destructive-text-color);
+    /* background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-destructive-text-color) 0%,
+        var(--tg-theme-light-destructive-text-color) 100%
+    ); */
+    border: 3px solid var(--tg-theme-destructive-text-color);
+    color: var(--tg-theme-destructive-text-color);
+}
+
+.tg-skeleton {
+    background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.tg-button-span {
+    background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.tg-button:hover {
+    background-image: linear-gradient(
+        to bottom left,
+        var(--tg-theme-button-color),
+        var(--tg-theme-button-light-color)
+    );
+}
+.tg-destructive-button:hover {
+    background-color: var(--tg-theme-destructive-text-color);
+    color: var(--tg-theme-text-color);
+}
+
+.required {
+    color: var(--tg-theme-destructive-text-color);
+}
+
+.tg-link {
+    color: var(--tg-theme-link-color);
+    cursor: pointer;
+}
+.active {
+    text-decoration: line-through;
+    color: var(--tg-theme-section-very-dark-bg-color);
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: var(--tg-theme-section-separator-color);
+}
+
+.switch {
+    --secondary-container: var(--tg-theme-button-shadow-color);
+    --primary: var(--tg-theme-button-color);
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 4.2rem;
+    height: 2.2rem;
+}
+
+/* Скрываем инпут */
+.switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стиль контейнера для слайдера */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid var(--tg-theme-section-light-bg-color2);
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+/* Стиль самого ползунка */
+.slider:before {
+    position: absolute;
+    content: '';
+    height: calc(2.2rem - 12px); /* Используем более точный расчет */
+    width: calc(2.2rem - 12px); /* Ширина ползунка */
+    border-radius: 100%;
+    top: 50%; /* Центрируем по вертикали */
+    left: 0.25rem; /* Сдвигаем левее для центрирования */
+    transform: translateY(-50%);
+    background-color: var(--tg-theme-section-light-bg-color3);
+    transition: 0.2s;
+}
+
+/* При включенном состоянии */
+input:checked + .slider:before {
+    background-image: linear-gradient(
+        to bottom right,
+        var(--tg-theme-button-color) 0%,
+        var(--tg-theme-button-light-color) 100%
+    );
+    left: calc(100% - 2.2rem + 0.5rem); /* Сдвигаем вправо при checked */
+}
+
+input {
+    outline: none;
+}
+
+select {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--tg-theme-hint-color);
+    border-radius: 0;
+    color: var(--tg-theme-text-color);
+    transition: all 0.1s;
+}
+
+select option {
+    background-color: var(--tg-theme-section-bg-color);
+    color: var(--tg-theme-text-color);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.shimmer {
+    animation: shimmer 4s linear infinite;
+    background-size: 400%;
+
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        var(--tg-theme-text-shadow-color2) 50%,
+        transparent 100%
+    );
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.not .up {
+    background-color: var(--tg-theme-shadow-destructive-text-color2);
+}
+
+.not .down {
+    background-color: var(--tg-theme-destructive-text-color);
+}
