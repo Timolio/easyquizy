@@ -193,7 +193,7 @@ async function handleOpenForm(formId: string) {
         <div v-if="showPopup" class="popup-backdrop" @click.self="closePopup">
             <div class="popup-container">
                 <div
-                    class="popup-content relative flex flex-col gap-6 mb-10 p-3 pt-6 m-2"
+                    class="popup-content relative flex flex-col gap-6 mb-16 p-3 pt-6 m-2"
                 >
                     <button
                         class="absolute right-0.5 top-0.5 close"

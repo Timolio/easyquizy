@@ -89,7 +89,7 @@ root.style.setProperty(
 );
 root.style.setProperty(
     '--tg-theme-section-very-dark-bg-color',
-    adjust(theme.themeParams.value.section_bg_color || '', -10)
+    adjust(theme.themeParams.value.section_bg_color || '', -15)
 );
 root.style.setProperty(
     '--tg-theme-shadow-destructive-text-color',

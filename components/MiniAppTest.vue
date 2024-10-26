@@ -77,7 +77,7 @@ onMounted(() => {
     );
     root.style.setProperty(
         '--tg-theme-section-very-dark-bg-color',
-        adjust(style.getPropertyValue('--tg-theme-section-bg-color') || '', -10)
+        adjust(style.getPropertyValue('--tg-theme-section-bg-color') || '', -15)
     );
     root.style.setProperty(
         '--tg-theme-section-very-dark-bg-color2',
