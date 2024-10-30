@@ -101,10 +101,10 @@ function sleep(ms: number) {
 
 onMounted(async () => {
     isLoading.value = true;
-    if (!initDataUnsafe.user?.id) {
-        console.log('No user ID provided.');
-        return;
-    }
+    // if (!initDataUnsafe.user?.id) {
+    //     console.log('No user ID provided.');
+    //     return;
+    // }
     let lang = initDataUnsafe?.user?.language_code;
     const ru_langs = new Set([
         'be',

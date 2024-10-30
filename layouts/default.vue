@@ -13,9 +13,9 @@ useHead({
     <main>
         <ClientOnly>
             <slot />
-            <MiniApp />
+            <!-- <MiniApp /> -->
         </ClientOnly>
-        <!-- <MiniAppTest /> -->
+        <MiniAppTest />
     </main>
 </template>
 
